@@ -4,7 +4,7 @@ class SkillEdit extends React.Component{
 
     render(){
         return(
-            <div>
+            <div>ToDo
             </div>
         )
     }
