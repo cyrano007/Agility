@@ -14,6 +14,11 @@ const PassportLoginPlugin = require("./MySchemaExtensionPlugin")
 
 var app = express()
 
+
+console.log("CLIENT_URL: " + process.env.CLIENT_URL),
+console.log("DATABASE_URL: "+  process.env.DATABASE_URL),
+console.log("SECRET_KEY: " + process.env.SECRET_KEY)
+
 const corsOptions = {
   origin: process.env.CLIENT_URL,
   credentials: true // <-- REQUIRED backend setting
