@@ -4,9 +4,14 @@ module.exports = {
       connection: process.env.DATABASE_URL || 'postgres://localhost/agility-dev',
       pool: { min: 0, max: 7 }
     },
-    test: {},
+    stage: {
+      client: 'pg',
+      connection: process.env.DATABASE_URL || 'postgres://localhost/agility-dev',
+      pool: { min: 0, max: 7 }
+    },
     production: {
       client: 'pg',
-      connection: process.env.DATABASE_URL
+      connection: process.env.DATABASE_URL,
+      pool: { min: 0, max: 7 }
     }
   }
